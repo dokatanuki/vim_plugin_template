@@ -6,8 +6,8 @@ let s:save_cpo = &cpo
 set cpo&vim
 
 
-" 関数の定義: プラグイン名#関数名
-function! vim_plugin_template#helloworld()
+" 関数の定義: ファイル名#関数名
+function! helloworld#helloworld()
   echo "Hello World!"
 endfunction
 
