@@ -5,10 +5,16 @@ scriptencoding utf-8
 let s:save_cpo = &cpo
 set cpo&vim
 
+" pythonスクリプトを読み込み
+pyfile <sfile>:h:h/src/helloworld.py
+
+" python <-> vim でデータをやりとりするために，vim moduleをimport
+python import vim
+
 
 " 関数の定義: ファイル名#関数名
-function! helloworld#helloworld()
-  echo "Hello World!"
+function! helloworld#helloworld(name)
+  python helloworld_test(vim.eval('a:name'))
 endfunction
 
 
