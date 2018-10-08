@@ -15,7 +15,7 @@ set cpo&vim
 " ************** プラグイン本体 **************
 
 " 関数コール :call ファイル名#関数名
-command! -nargs=1 Helloworld call helloworld#helloworld(<f-args>)
+command! -nargs=0 Helloworld call helloworld#helloworld()
 
 " ********************************************
 
