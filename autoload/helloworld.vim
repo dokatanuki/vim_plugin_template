@@ -9,12 +9,12 @@ set cpo&vim
 pyfile <sfile>:h:h/src/helloworld.py
 
 " python <-> vim でデータをやりとりするために，vim moduleをimport
-python3 import vim
+python import vim
 
 
 " 関数の定義: ファイル名#関数名
 function! helloworld#helloworld(name)
-  python3 helloworld_test(vim.eval('a:name'))
+  python helloworld_test(vim.eval('a:name'))
 endfunction
 
 
