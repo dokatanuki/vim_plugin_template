@@ -15,7 +15,7 @@ set cpo&vim
 " ************** プラグイン本体 **************
 
 " 関数コール :call プラグイン名#関数名
-:nmap z :call vim_plugin_template#helloworld() <CR>
+command! -nargs=0 Helloworld call vim_plugin_template#helloworld()
 
 " ********************************************
 
